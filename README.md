@@ -1,0 +1,3 @@
+- Die `acdc.config.json` Datei wird im Build Prozess erstellt, entsprechend den konfigurierten Werten
+- Es muss ein acdc Package geben, welches in jedes Projekt eingebunden wird (via npm). Dieses behandelt die `acdc.config.json` Einstellungen
+- `acdc.modules.js` beinhaltet alles was in adapter.config drin ist.

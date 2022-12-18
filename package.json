@@ -1,0 +1,50 @@
+{
+  "name": "acdc-example-core",
+  "version": "1.0.0",
+  "description": "ABS Team Cloud Development Concept - Example Core App",
+  "main": "index.js",
+  "scripts": {
+    "start": "node dist",
+    "clean": "rimraf dist",
+    "build": "npm-run-all build:*",
+    "build:clean": "npm-run-all clean",
+    "build:ts": "tsc",
+    "lint": "npm-run-all lint:*",
+    "lint:eslint": "eslint src",
+    "lint:prettier": "prettier src --check",
+    "format": "npm-run-all format:*",
+    "format:prettier": "prettier src --write",
+    "format:eslint": "eslint --fix src",
+    "dev": "ts-node-dev --inspect --respawn --transpile-only src",
+    "debug": "node --inspect dist",
+    "test": "xo"
+  },
+  "keywords": [
+    "ACDC",
+    "Cloud",
+    "Development",
+    "Concept",
+    "ABS",
+    "Team"
+  ],
+  "author": "Markus Klein",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^18.11.9",
+    "@typescript-eslint/eslint-plugin": "^5.42.1",
+    "@typescript-eslint/parser": "^5.42.1",
+    "eslint": "^8.27.0",
+    "eslint-config-standard-with-typescript": "^23.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.5.1",
+    "eslint-plugin-promise": "^6.1.1",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^2.7.1",
+    "rimraf": "^3.0.2",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^4.8.4"
+  },
+  "dependencies": {
+    "eslint-config-prettier": "^8.5.0"
+  }
+}
